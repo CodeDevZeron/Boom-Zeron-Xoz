@@ -10,7 +10,7 @@ from telegram import Update, Bot
 from telegram.ext import Dispatcher, CommandHandler, CallbackContext
 
 # --- Configuration ---
-TOKEN = os.environ.get('VERCEL_BOT_TOKEN')
+TOKEN = os.environ.get('BOT_TOKEN')
 if not TOKEN:
     raise ValueError("No VERCEL_BOT_TOKEN found. Please set it in your Vercel project settings.")
 
